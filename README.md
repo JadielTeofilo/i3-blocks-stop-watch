@@ -1,2 +1,2 @@
-# i3-blocks-timer
-A timer for i3 blocks
+# i3-blocks-stop-watch
+A stopwatch timer for i3 blocks
