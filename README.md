@@ -1,5 +1,5 @@
 # i3blocks-stop-watch
-A stopwatch timer for i3 blocks
+A very simple stopwatch timer for i3 blocks
 
 
 ### Installing
