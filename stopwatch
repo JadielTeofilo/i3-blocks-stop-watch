@@ -38,6 +38,7 @@ echo $STATUS >$STATUS_FILE
 if [[ $STATUS = reset ]]; then
 	echo >$START_FILE
 	echo >$STOP_FILE
+	echo
 	exit 0
 fi
 
