@@ -1,35 +1,34 @@
 # i3blocks-stop-watch
-A very simple stopwatch timer for i3 blocks
 
+A simple stopwatch timer for i3blocks
+
+# Usage
+
+Start/stop the stopwatch by left-clicking on the block.
+
+Reset it by right-clicking on the block.
 
 ### Installing
 
-- Add scripts stopwatch and flip_stopwach to the path. Eg.:
-
 ```
 sudo cp stopwatch /usr/bin
-sudo cp flip_stopwatch /usr/bin
 ```
 
 - Add the following to the i3blocks.conf:
 
 ```
-# Stopwatch thing
+# Stopwatch
 [stopwatch]
+label=⏱
 interval=1
 command=stopwatch
-separator=true
-#label=
 ```
 
-And to the i3 config, add a shortcut to flip the stopwatch state:
+- If desired keybindings can be added to i3 to control the stopwatch, for example:
 
 ```
-bindsym mod1+t exec flip_stopwatch
+# Start/Stop stopwatch
+bindsym Pause exec env BLOCK_BUTTON=1 stopwatch
+# Reset stopwatch
+bindsym Shift+Pause exec env BLOCK_BUTTON=3 stopwatch
 ```
-
-On my config `mod1` is `alt`, so I can start and stop the timer with `alt+t`.
-
-Example:
-
-![Alt Text](img/example.gif)
